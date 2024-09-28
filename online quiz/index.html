@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quiz Maker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Online Quiz Maker</h1>
+        <div id="home">
+            <p>Welcome to the Online Quiz Maker!</p>
+            <button id="create-quiz">Create a Quiz</button>
+            <button id="take-quiz">Take a Quiz</button>
+        </div>
+
+        <div id="quiz-creation" class="hidden">
+            <h2>Create a New Quiz</h2>
+            <form id="quiz-form">
+                <input type="text" placeholder="Quiz Title" id="quiz-title" required>
+                <div id="questions"></div>
+                <button type="button" id="add-question">Add Question</button>
+                <button type="submit">Submit Quiz</button>
+            </form>
+        </div>
+
+        <div id="quiz-taking" class="hidden">
+            <h2 id="quiz-title-taking"></h2>
+            <div id="quiz-questions"></div>
+            <button id="next-question">Next Question</button>
+            <button id="submit-quiz">Submit Quiz</button>
+        </div>
+
+        <div id="quiz-results" class="hidden">
+            <h2>Your Results</h2>
+            <p id="score"></p>
+            <button id="back-to-home">Back to Home</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
